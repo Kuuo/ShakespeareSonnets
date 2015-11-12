@@ -1,0 +1,118 @@
+*{	
+	margin: 0; padding: 0;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.bg{
+	background-image: url(../img/bgi.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	/*-webkit-filter: blur(3px);*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+
+.head{
+	margin: 2% auto;
+	width: 50%;
+	text-align: center;
+}
+.title{
+	margin: 1% auto;
+	width: 70%;
+	color: #FFF;
+	text-shadow:
+		0 0 5px #CCC,
+		0 0 10px #333;
+	font-size: 280%;
+	animation: changeColor 5s linear 0.1s infinite alternate;
+	-webkit-animation: changeColor 5s linear 0.1s infinite alternate;
+	-moz-animation: changeColor 5s linear 0.1s infinite alternate;
+	-o-animation: changeColor 5s linear 0.1s infinite alternate;
+}
+@keyframes changeColor{
+	0%    { color: #FFF;}
+	100%   { color: #CCCC80;}
+}
+@-webkit-keyframes changeColor{
+	0%    { color: #FFF;}
+	100%   { color: #CCCC80;}
+}
+@-moz-keyframes changeColor{
+	0%    { color: #FFF;}
+	100%   { color: #CCCC80;}
+}
+@-o-keyframes changeColor{
+	0%    { color: #FFF;}
+	100%   { color: #CCCC80;}
+}
+
+.avatarbox{
+	margin: 3% auto;
+	width: 15%;
+	transition: all, 1s, ease;
+	-webkit-transition: all, 1s, ease;
+	-moz-transition: all, 1s, ease;
+	border-radius: 100%;
+	box-shadow: 
+		0 0 10px #252525;
+}
+.avatarbox:hover {
+	transform: scale(1.1) rotate(-20deg);
+	-webkit-transform: scale(1.1) rotate(-20deg);
+	-moz-transform: scale(1.1) rotate(-20deg);
+}
+.avatar{
+	width: 100%;
+	display: block;
+	margin: 3% auto;
+	opacity: 0.9;
+	mask: url(../img/avatar.png) no-repeat;
+	-webkit-mask: url(../img/avatar.png) no-repeat;
+	-webkit-mask-size: 100%;
+}
+
+.navigation{
+	margin: 5% auto;
+	width: 40%;
+	padding: 0.5% 0;
+	text-align: center;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	z-index: 1000;
+}
+.navigation a{
+	text-decoration: none;
+	margin: 0 8%;
+	color: #FFF;
+	font-size: 110%;
+	border: none;
+	text-shadow: 0 0 5px #000, 0 0 10px #FFF;
+}
+.navigation a:hover{
+	opacity: 0.5;
+}
+
+.content{
+	margin: 5% auto;
+	width: 70%;
+	box-shadow: 
+		0 0 5px  #FFF,
+		0 0 10px #252525;
+	padding: 1% 0 2% 0;
+	background-color: #FFF;
+	opacity: 0.8;
+	text-align: center;
+	font-style: italic;
+}
+.content h1{
+	margin: 1% auto;
+}
+.content p{
+	font-size: 110%;
+	margin: 1.5% auto;
+}

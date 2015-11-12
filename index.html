@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shakespeare's sonnets</title>
+		<link type="text/css" href="css/common.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="bg"></div>
+		<div class="head">
+			<p class="title">Shakspeare's</p>
+			<p class="title">sonnets</p>
+		</div>
+		<div class="avatarbox"><img class="avatar" src="img/shakes.jpg" /></div>
+		<div class="navigation">
+			<a href="javascript:">HOME</a>
+			<a href="javascript:">SONNET</a>
+			<a href="javascript:">ABOUT</a>
+		</div>
+		<div class="content" id="divSnow">
+			<h1>Sonnet XLIII </h1>
+			<p>When most I wink, then do mine eyes best see,</p>
+			<p>For all the day they view things unrespected;</p>
+			<p>But when I sleep, in dreams they look on thee,</p>
+			<p>And darkly bright, are bright in dark directed.</p>
+			<p>Then thou, whose shadow shadows doth make bright,</p>
+			<p>How would thy shadow's form form happy show</p>
+			<p>To the clear day with thy much clearer light,</p>
+			<p>When to unseeing eyes thy shade shines so! </p>
+			<p>How would, I say, mine eyes be blessed made</p>
+			<p>By looking on thee in the living day,</p>
+			<p>When in dead night thy fair imperfect shade</p>
+			<p>Through heavy sleep on sightless eyes doth stay!</p>
+			<p>All days are nights to see till I see thee,</p>
+			<p>And nights bright days when dreams do show thee me.</p>
+		</div>
+
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/Websnowjq.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		$(function(){
+			$("#divSnow").websnowjq({ snowFlakes: 100 });
+		});
+		</script>
+	</body>
+</html>
